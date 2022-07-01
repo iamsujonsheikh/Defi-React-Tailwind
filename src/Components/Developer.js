@@ -3,7 +3,7 @@ import terminal from '../assets/terminal.png'
 
 const Developer = () => {
   return (
-    <section className='w-full h-screen bg-slate-700 px-6 md:flex justify-center items-center space-y-4 py-10'>
+    <section name='developer' className='w-full md:h-screen bg-black px-6 md:flex justify-center items-center space-y-10 py-10'>
 
         {/* Tittle section */}
        <div className='space-y-4 max-w-[500px]'>
@@ -16,7 +16,7 @@ const Developer = () => {
 
        {/* img section */}
        <div>
-            <img className='w-96' src={terminal} alt="" />
+            <img className='w-96 shadow-md rounded hover:scale-105 duration-300 shadow-sky-400' src={terminal} alt="" />
        </div>
     </section>
   )

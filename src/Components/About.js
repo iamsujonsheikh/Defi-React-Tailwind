@@ -4,7 +4,7 @@ import { MdSecurity,MdStorage,MdControlCamera,MdOutlineWifiProtectedSetup } from
 
 const About = () => {
   return (
-    <section className='w-full md:h-screen bg-slate-700 px-5 py-20'>
+    <section name='about' className='w-full md:h-screen flex flex-col justify-center items-center bg-black px-6'>
 
         <h1 className='text-3xl text-center font-semibold text-slate-100'>A Growing Protocol Ecosystem</h1>
 

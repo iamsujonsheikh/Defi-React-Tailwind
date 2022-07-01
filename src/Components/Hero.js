@@ -1,9 +1,11 @@
 import React from 'react'
-import video from '../assets/World - 2.mp4'
+import video from '../assets/World.mp4'
+import Typed from 'react-typed';
+
 
 const Hero = () => {
   return (
-    <section className='w-full h-full'>
+    <section name='platform' className='w-full h-full'>
 
         {/* video section */}
         <video className='w-full h-screen   object-cover absolute -z-10' src={video} autoPlay muted loop />
@@ -13,7 +15,14 @@ const Hero = () => {
             <h1 className='text-4xl md:text-5xl font-bold text-center'
             >Decentralized <br /> <span className='text-indigo-400'>Trending</span> Protocol</h1>
 
-            <p className='py-2'>Segreto santo non sí di purita dallo di esso potra.</p>
+            {/* typed here */}
+            <Typed
+        className='py-2'
+                    strings={['Segreto santo non si di purita dallo di esso potra']}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    loop
+                />
 
             <div className='flex space-x-4 mt-4'>
                 <button className='bg-indigo-500 py-1 px-4 rounded-full font-semibold bg-opacity-40 hover:scale-110 duration-300'>Use Defi</button>
